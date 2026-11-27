@@ -20,11 +20,10 @@ else Q <= {Q[2:0], sin};   // shift left, sin enters at LSB
 Serial output: sout = Q[3]   (the bit about to be shifted out)
 
 ## Design / RTL Program
+<img width="1497" height="513" alt="ex6 (2)" src="https://github.com/user-attachments/assets/46ffd93e-391c-4f50-ad37-79a55d23e2a5" />
 
-Testbench Program
-
-
-
+## Testbench Program
+<img width="1511" height="1036" alt="ex6 (1)" src="https://github.com/user-attachments/assets/4878882d-8db7-4fc7-b5e5-9d878f34c6d3" />
 
 ## Operation / Truth Table
 
@@ -82,28 +81,7 @@ Q(next) = {Q[2:0], sin}
 The design was compiled and simulated using Synopsys VCS, and the functionality was verified using DVE waveform analysis, matching the expected operation table.
 
 ## Output
-
-
-
-## Viva-Voce Questions
-
-●	What is a shift register, and what are its four basic types (SISO, SIPO, PISO, PIPO)?
-
-●	How does a SIPO shift register differ from a PISO shift register?
-
-●	How many clock pulses are required to fully load a 4-bit SIPO shift register with serial data?
-
-●	How would you modify the design to shift right instead of left?
-
-●	How would you convert this SIPO register into a Serial-In Serial-Out (SISO) register?
-
-●	What is the purpose of the asynchronous reset in this design?
-
-●	Why is a VCD file generated, and what does $dumpvars(0, tb) do?
-
-●	How can a shift register be used to implement a ring counter or Johnson counter?
-
-●	What is the difference between a shift register built from D flip-flops versus one described behaviourally in Verilog, in terms of simulation versus synthesis?
+<img width="1917" height="480" alt="ex6 (3)" src="https://github.com/user-attachments/assets/eec44161-d8fb-4924-9878-99b51963304b" />
 
 ## Result
 
